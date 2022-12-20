@@ -1,0 +1,1080 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+
+.header{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    z-index: 1;
+    align-content: center;
+}
+
+.header .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navbar-menu{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu a{
+    display: inherit;
+    color: #19181a;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .1s ease-out;
+    width: auto;
+}
+
+.navbar-menu a:hover{
+    opacity: 1;
+    text-decoration: none;
+}
+
+.enroll{
+    align-self: center;
+    margin-left: 30px;
+    padding: 10px 30px;
+    background-color: #6699cc;
+    border-radius: 100px;
+    color: #FFF;
+    text-decoration: none;
+    line-height: normal;
+    box-shadow: 0 4px 6px rgba(82, 147, 166, .2);
+    transition: all 0.1s ease-out;  
+}
+
+.header-logo{
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: all 0.2s ease-out;
+    transform-origin: 50% 50%;
+}
+
+.header-logo:focus, .header-logo:active{
+    outline: none;
+}
+
+.header-logo div span{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-decoration: none;
+    color: #6699cc;
+    letter-spacing: 2px;
+}
+
+.header-logo div p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-decoration: none;
+    color: #6699cc;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.navbar-menu li a:hover{
+    opacity: 1;
+}
+
+
+
+.enroll:hover{
+    transform: scale(1.05);
+    color: #FFF;
+    box-shadow: 0 6px 9px rgba(82, 147, 166, .5);
+    text-decoration: none;
+}
+
+
+
+#title{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #19181a;
+    padding: 2.5%;
+    background: url('img/banner.png')  no-repeat;
+    background-size: 100%;
+    height: 300px;
+}
+
+#title h1{
+    margin: auto 0;
+    /*решить вопрос + добавить медиа запрос до 500px ширина*/
+    padding-bottom: 1vh;
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: 'Arimo', sans-serif;
+    /* letter-spacing: 0.5rem; */
+    color: #FFF;
+    width: 35vw;
+    font-weight: 800;
+}
+
+#title p{
+    width: 35%;
+    text-align: center;
+    font-size: max(3vw, 23px);
+    font-family: 'Alegreya', SemiBold 600;
+    color: #303030;
+    text-justify: distribute;
+    padding: 1vh 0;
+}
+
+.content{
+    margin: 15vh 0 7% 7%;
+    display: flex;
+    background-color: #FFFFFF;
+    height: auto;
+    overflow-y: hidden;
+
+}
+
+.main{
+    color: #303030;
+    flex: 3; 
+    display: flex;  
+    flex-direction: column;
+}
+
+.aside{
+    font-family: "Open sans";
+    flex: 1;
+    display: flex;  
+    flex-direction: column;
+    padding: 2% 5%;
+}
+
+.aside .item p{
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75vw;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    color: #444444;
+}
+
+.aside .item a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: -5%;
+    padding-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1vw;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    color: #336699;
+    transition: 0.1s;
+}
+
+.aside .item a:hover{
+    color: #6699cc;
+}
+
+.item{
+    background-color: #e8e8e8;
+    border-radius: 200px;
+    display: flex;
+    padding: 0 7%;
+    align-content: space-between;
+    height: fit-content;
+    color:#D9D9D9;
+}
+
+.aside .item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    border-radius: 20%;
+}
+
+.showMoreInfo::after{
+    content: "...";
+}
+
+.showMoreInfo:hover::after{
+    
+    content: " ул. Пекарева 35";
+    color:#336699;
+}
+
+.item:not(:first-child) {
+    margin-top: 10vh;
+}
+
+.item img{
+    margin: 5%;
+    align-self: center;
+    width: 30%;
+    
+}
+
+.item div {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.item div h2{
+    margin-top: 5%;
+    font-family: 'Open sans', sans-serif;
+    font-size: 2.5vw;
+    text-shadow: 4px 3px 0 #336699;
+    color: #6699cc;
+    overflow: hidden;
+}
+
+.item div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    color: #444444;
+}
+
+.item div ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    color: #336699;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.strong1{
+    color: #336699;
+}
+
+.strong2{
+    color: #6699cc;
+}
+
+
+
+.item div ul{
+    list-style:none;
+    padding: 0;
+}
+
+.item div ul li{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    color: #6699cc;
+}
+
+
+
+.item div ul li a:hover{
+    font-size: 125%;
+}
+
+/* .revievs{
+    padding-top: 10vh;
+    width: 100%;
+    background-color: #BFBFBF;
+    border-top: 3px solid #303030;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: space-around;
+
+}
+
+.revievs .item{
+    height: 25vw;
+    margin: 0;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    
+    overflow: hidden;
+}
+
+.revievs .item img{
+    width: 80%;
+}
+
+.revievs .item h3{
+    font-family: 'Open sans', sans-serif;
+    font-size: 2.5vw;
+    text-shadow: 4px 3px 0 #336699;
+    color: #6699cc;
+    
+}
+
+.revievs .item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    color: #444444;
+} */
+
+
+
+.form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #e8e8e8;
+    border-radius: 100px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+
+
+.col-25{
+    flex: 1;
+}
+
+.col-75{
+    flex: 2;
+}
+
+.form label{
+    font-size: 2rem;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 500;
+    color: #336699;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    display: inline-block;
+}
+
+.form input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #444444;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    height: 2rem;
+    width: 75%;
+}
+
+.form textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #444444;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    height: 2rem;
+    width: 75%;
+}
+
+.form input[type=submit]{
+    background-color: #6699cc;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: right;
+    line-height: 100%;
+    width: 45%;
+    height: 2.8vw;
+}
+
+
+@media screen and (min-width: 1900px) {
+    #title h1{
+        width: 35vw;
+        font-size: 2.5vw;
+    }
+    #title{
+        height: 20vw;
+    }
+    .header{
+        height: 4vw;
+    }
+
+    .header-logo span{
+        font-size: 2vw;
+    }
+
+    .navbar-menu a{
+        font-size: 1.2vw;
+        padding: 0.6vw;
+    }
+
+    .enroll{
+        font-size: 1.15vw;
+        padding: 0.6vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #title h1{
+        width: 36vw;
+        font-size: 2rem;
+    }
+
+    #title{
+        height: 350px;
+    }
+
+    .form{
+        width: 60%;
+        padding: 2% 3%;
+        border-radius: 100px;
+    }
+    
+    .row{
+        display: flex;
+        justify-content: center;
+        padding: 1% 0.5%;
+    }
+    
+    
+    .col-25{
+        flex: 1;
+    }
+    
+    .col-75{
+        flex: 2;
+    }
+    
+    .form label{
+        padding-left: 10%;
+        font-size: 1.7rem;
+        color: #336699;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    }
+    
+    .form input{
+        font-size: 1.45rem;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        height: 2rem;
+        width: 90%;
+    }
+    
+    .form textarea{
+        font-size: 1.45rem;
+        color: #444444;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        height: 2rem;
+        width: 90%;
+    }
+    
+    .form input[type=submit]{
+        font-size: 2rem;
+        border-radius: 6px;
+        width: 40%;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #title h1{
+        font-size: 1.56rem;
+        width: 35vw
+    }
+    #title{
+        height: 250px;
+    }
+
+    .form{
+        width: 85%;
+        padding: 2% 3%;
+        border-radius: 80px;
+    }
+
+    .form label{
+        padding-left: 10%;
+        font-size: 1.4rem;
+        color: #336699;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    }
+    
+    .form input{
+        font-size: 1.2rem;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        height: 2rem;
+        width: 80%;
+    }
+    
+    .form textarea{
+        font-size: 1.2rem;
+        color: #444444;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        height: 2rem;
+        width: 80%;
+    }
+
+    .item div h2{
+        font-size: 2.5vw;
+        text-shadow: 2px 1.5px 0 #336699;
+    }
+    
+    .item div p{
+        font-size: 2vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+    
+    .item div ul li a{
+        font-size: 2vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+
+    .item div ul li{
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+
+
+}
+
+@media screen and (max-width: 775px) {
+    #title h1{
+        font-size: 1.2rem;
+    }
+
+    #title{
+        height: 200px;
+    }
+
+
+
+    .header-logo span{
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .header-logo span{
+        font-size: 18px;
+    }
+
+    .navbar-menu a{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .enroll{
+        margin-left: 2%;
+
+    }
+
+    .aside{
+        display: none;
+    }
+
+    .content{
+        padding: 0 10%;
+        margin-left: 0;
+        
+    }
+
+  
+
+    .form{
+        width: 85%;
+        padding: 4% 3%;
+        border-radius: 80px;
+    }
+
+    .form label{
+        padding-left: 20%;
+        font-size: 3.75vw;
+        color: #336699;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    }
+    
+    .form input{
+        margin-left: 5%;
+        font-size: 1.12rem;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        height: 2rem;
+        width: 80%;
+        
+    }
+    
+    .form textarea{
+        margin-left: 5%;
+        font-size: 1.2rem;
+        color: #444444;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        width: 80%;
+    }
+
+    .form input[type=submit]{
+        font-size: 1.6rem;
+        border-radius: 14px;
+        line-height: 100%;
+        width: 45%;
+    }
+
+
+    .item div h2{
+        font-size: 3.2vw;
+        text-shadow: 2px 1.5px 0 #336699;
+    }
+    
+    .item div p{
+        margin-top: 7%;
+        font-size: 2.5vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+    
+    .item div ul li a{
+        font-size: 2.3vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+
+    .item div ul li{
+        font-size: 2.6vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .navbar-menu a{
+        font-size: 15px;
+    }
+
+    #title h1{
+        font-size: 0.9rem;
+        width: 35vw;
+    }
+
+    #title{
+        height: 150px;
+    }
+
+    .header{
+        height: 50px;
+    }
+
+    .enroll{
+        margin-left: 20px;
+        padding: 7px 20px;
+        box-shadow: 0 3px 4px rgba(82, 147, 166, .2); 
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .content{
+        margin-top: 10%;
+    }
+
+    .form{
+        width: 85%;
+        padding: 4% 3%;
+        border-radius: 40px;
+    }
+
+    .form label{
+        padding-left: 20%;
+        font-size: 3.75vw;
+        color: #336699;
+        text-shadow: 1px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 2px 0.5px 1px #CCCCCC, 1px 1px 1px #EEEEEE, 3px 1px 1px #CCCCCC, 2px 1.5px 1px #EEEEEE, 4px 1.5px 1px #CCCCCC, 3px 2px 1px #EEEEEE, 5px 2px 1px #CCCCCC, 4px 2.5px 1px #EEEEEE, 6px 2.5px 1px #CCCCCC, 5px 3px 1px #EEEEEE, 7px 3px 1px #CCCCCC;
+    }
+    
+    .form input{
+        margin-left: 5%;
+        font-size: 3vw;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        height: 6vw;
+        width: 75%;
+        
+    }
+    
+    .form textarea{
+        margin-left: 5%;
+        font-size: 1.2rem;
+        color: #444444;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        width: 75%;
+    }
+    
+    .content{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .item div h2{
+        font-size: 4.5vw;
+        text-shadow: 2px 1.5px 0 #336699;
+    }
+    
+    .item div p{
+        margin-top: 3%;
+        font-size: 3vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+    
+    .item div ul li a{
+        font-size: 3vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+
+    .item div ul li{
+        font-size: 3vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #title{
+        height: 125px;
+    }
+
+    #title h1{
+        font-size: 0.7rem;
+        width: 36vw;
+    }
+
+    .navbar-menu a{
+        font-size: 0.75rem;
+    }
+
+    .enroll{
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    
+    .item:first-child {
+        padding-top: 3vh;
+        margin-top: 0;
+    }
+
+    .item.item:not(:first-child){
+        margin-top: 0;
+        padding-top: 3vh;
+    }
+
+    .content{
+        margin: 0;
+        padding:0;
+    }
+
+    .item{
+        padding: 0;
+        border-radius: 0;
+        padding: 0 4%;
+        padding-right: 3%;
+    }
+     .item div ul li a{
+        font-size: 4vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    }
+
+    .item div ul li{
+        font-size: 4vw;
+        text-shadow: 0.5px 0px 1px #CCCCCC, 0px 0.5px 1px #EEEEEE, 1px 0.5px 1px #CCCCCC, 0.5px 1px 1px #EEEEEE, 1.5px 1px 1px #CCCCCC, 1px 1.5px 1px #EEEEEE, 2px 1.5px 1px #CCCCCC, 1.5px 2px 1px #EEEEEE, 2.5px 2px 1px #CCCCCC, 2px 2.5px 1px #EEEEEE, 3px 2.5px 1px #CCCCCC, 2.5px 3px 1px #EEEEEE, 3.5px 3px 1px #CCCCCC;
+    } 
+    
+
+    .form{
+        border-top: 2px solid #BFBFBF;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    .row{
+        display: flex;
+        justify-content: center;
+        padding: 1.5% 10%;
+        padding-left: 0;
+    }
+    
+    
+    
+    .col-25{
+        flex: 3;
+    }
+    
+    .col-75{
+        flex: 3;
+    }
+    
+    .form label{
+        font-size: 1.2rem;
+    }
+    
+    .form input{
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.67rem;
+        color: #444444;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+        height: 2rem;
+        width: 100%;
+    }
+    
+    .form textarea{
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.67rem;
+        border-radius: 2px;
+        height: 1rem;
+        width: 100%;
+    }
+    
+    .form input[type=submit]{
+        font-size: 1rem;    
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navbar-menu :first-child{
+        display: none;
+    }
+
+    .navbar-menu a{
+        padding: 6px;
+        font-size: 13px;
+        opacity: 0.8;
+    }
+
+    .enroll{
+        margin-left: 6px;
+        font-size: 14px;
+    }
+
+    #title{
+        height: 100px;
+    }
+
+    #title h1{
+        font-size: 0.6rem;
+        width: 36.5vw;
+    }
+}
+
+
+
+.site-footer
+{
+  margin-top: 10vh;
+  background-color:white;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#26272b;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998;
+  background:#3b5998
+}
+.social-icons a.instagram:hover
+{
+    background-color:#ea4c89;
+    background: #ea4c89;
+}
+.social-icons a.telegram:hover
+{
+  background-color:#007bb6;
+  background: #007bb6;
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}   
+
+.social-icons a.facebook{
+    background: url("img/facebook.png") no-repeat center;
+    background-size: 100%;
+}
+
+.social-icons a.instagram{
+    background: url("img/instagram.png") no-repeat center;
+    background-size: 100%;
+}
+
+.social-icons a.telegram{
+    background: url("img/telegram.png") no-repeat center;
+    background-size: 90%;
+}

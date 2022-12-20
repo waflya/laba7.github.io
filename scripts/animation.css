@@ -1,0 +1,26 @@
+/* #logo span::after{
+    content: "Бел-клиник";
+    
+}
+
+#logo{
+    transition: 0.6s;
+}
+
+.header-logo:hover #logo{
+    animation: logo1 0.6s;
+}
+
+.header-logo:hover #logo span::after{
+    animation: logo2 0.6 linear;
+}
+
+@keyframes logo1 {
+    
+    100% {transform: rotate3d(0,1,0,90deg);}
+}
+
+@keyframes logo2 {
+    0% {content: "Бел-клиник";}
+    50% {content: "fff";}
+} */

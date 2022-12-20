@@ -1,0 +1,1 @@
+document.getElementById('title').style.marginTop = String(+window.innerWidth * 9 / 16 * -0.25) + "px";

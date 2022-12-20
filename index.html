@@ -1,0 +1,209 @@
+<!-- создать гит со своим фио -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    
+    <title>Бел-Клиник.by</title>
+    <meta name="description" content="Частная клиника, предоставляющая полный комплекс лечения, профилактики, обследования, содержание, а так же поддержку жизни тяжело больным пациентам.">
+    <meta name="keywords" content="клиника, бел клиника, сайт клиники, телефон клиники, бел клиник официальный сайт, частная клиника, глазная клиника, медицинский центр, здравоохранение, взрослая поликлиника, лечебный центр, медицинская помощь, медклиник, стало плохо, скорая, скорая помощь, bel clinic">
+
+    <link rel="icon" href="favicon.png">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="scrollbar.css" type="text/css">
+    <link href="scripts/animation.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="scripts/logoAnimation.js"></script>
+    <script src="scripts/scrolling.js"></script>
+    
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="container">
+            <button class="header-logo" onclick="logo_anim()">
+                <div id="logo">
+                    <span>Бел-Клиник</span>
+                </div>
+                
+            </button>
+
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <a href="#about">О нас</a>
+                    <a href="#contacts">Контакты</a>
+                    <a href="#shedule">График работы</a>
+                </ul>
+                
+                <a href="#enroll" class="enroll">Записаться</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="title">    
+        <h1>Болит спина, оттёк, нервоз — для нас это фигня вопрос</h1>
+    </div>
+
+    <article class="content">
+        <main class="main">
+            <div class="item">
+                <img src="img/faster-better.png">
+                <div>
+                    <h2 id="about">Быстро и качественно</h2>
+                    <p>За 8 лет мы оказали услуги белее чем 100.000 клиентам. Наши врачи <strong class="strong1">быстро ставят диагноз</strong> и принимают меры, <strong class="strong2">не заставляя</strong> пациента <strong class="strong2">ждать.</strong></p>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <img src="img/schedule.png" preload="auto"></img>
+                <div>
+                    <h2 id="shedule">Наш график работы</h2>
+                    <p>Мы <strong class="strong1">работаем круглосуточно</strong>, при острой необходимости <strong class="strong2">вы можете вызвать нашу помощь скорого назначения.</strong></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/contacs.png" preload="auto"></img>
+                <div>
+                    <h2 id="contacts">Наши Контакты</h2>
+                    <ul>
+                        <li>MTC: <a href="tel:+375332233220">+375 (33) 223-32-20</a></li>
+                        <li>life: <a href="tel:+375252233220">+375 (25) 223-32-20</a></li>
+                        <li>Velcom: <a href="tel:+375442233220">+375 (44) 223-32-20</a></li>
+                        <li>TG: <a href="https://T.me/ya_waflya">ya_waflya</a></li>
+                        <li>E-mail: <a href="mailto:etowaflya@gmail.com">&nbsp; etowaflya@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+
+        <aside class="aside">
+            <div class="item">
+                <p class="showMoreInfo">
+                    <time>22.09.2022</time> была построена еще одна поликлиника "Бел-клиник", по адресу
+                </p>
+            </div>
+
+            <div class="item">
+                <p>
+                    Первые действия при остром поджелудочном воспалении!
+                </p>
+                <a href="#">Читать</a>
+            </div>
+        </aside>
+    </article>
+
+    <!-- <article class="revievs">
+        <div class="item">
+            <img src="img/rev1.png" alt="person">
+            <h3>Алиса</h3>
+            <p>У моего сына ночью разболелся бок, мы обратились за помощью в Бел-клиник, врачи приехали за 6 минут и сразу установили, что это апендицыд. Мой сын побыл в клинике 6 дней, всё пошло безболезненно. Я советую вам эту компанию.</p>
+        </div>
+
+        <div class="item">
+            <img src="img/rev1.png" alt="person">
+            <h3>Максим</h3>
+            <p>Обащался по поводу МРТ головного мозга, процедура пошла легко и быстро. Я рад, что обратился именно сюда.</p>
+        </div>
+
+        <div class="item">
+            <img src="img/rev1.png" alt="person">
+            <h3>Максим</h3>
+            <p>Обащался по поводу МРТ головного мозга, процедура пошла легко и быстро. Я рад, что обратился именно сюда.</p>
+        </div>
+    </article> -->
+
+
+    <form action="action.php" method="post" class="form" id="enroll">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Имя</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="tel">Телефон</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="tel" name="tel" placeholder="Телефон для связи" required>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Доп. инф.</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Опишите проблему" style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <input type="submit" value="Отправить">
+    </div>
+    </form>
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify"><i>BEL-CLINIC</i> provides comprehensive medical facilities and programs related to the patient care services, clinical services, research and medical education. It offers specialized medical care with medical departments and centers in most of the key disease categories and health disorders. The organization also operates several colleges of medicine which offer various residency and fellowship programs.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Оur employees</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Vacancies</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Contribute</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+           <a href="#">Bel-Clinic</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="telegram" href="#"><i class="fa fa-telegram"></i></a></li>  
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+    <script src="scripts/borders.js"></script>
+    </body>
+</html>
